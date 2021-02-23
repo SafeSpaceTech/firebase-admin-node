@@ -12,6 +12,7 @@
     "build": "gulp build",
     "build:tests": "gulp compile_test",
     "prepare": "npm run build",
+    "postinstall": "npm run build",
     "lint": "run-p lint:src lint:test",
     "test": "run-s lint test:unit",
     "integration": "run-s build test:integration",
